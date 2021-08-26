@@ -1,0 +1,70 @@
+#sign-up-form {
+  background-color: $backLight;
+  color: $foreground;
+  border-radius: 49px;
+  @include wh(698px);
+  padding: 67.5px 55px;
+  text-align: center;
+  z-index: 10;
+
+  .title {
+    margin: 0;
+    font-weight: 700;
+    @include text(55px, 72px);
+    color: $foreHeading;
+  }
+
+  .details {
+    margin: 6px auto 49px;
+    width: 472px;
+    @include text(23px, 30px);
+  }
+
+  .form {
+  display: flex;
+  flex-direction: column;
+
+  input {
+    outline: none;
+
+    &.input-mail, &.input-password {
+      background: $backWhite;
+      border: 1.5px solid rgba(0, 0, 0, 0.1);
+      border-radius: 15px;
+      width: 575px;
+      padding: 27px 33px;
+      @include text(23px, 19px);
+
+      &::placeholder {
+        color: rgba(0, 0, 0, 0.5);
+      }
+    }
+
+    &.input-mail {
+      margin-bottom: 23px;
+    }
+
+    &.input-password {
+      margin-bottom: 32px;
+    }
+
+    &.input-submit {
+      background: $backBlue;
+      color:$backWhite;
+      @include text(34px, 44px);
+      font-weight: 700;
+      border: none;
+      border-radius: 23px;
+      width: fit-content;
+      margin: 0 auto 17px;
+      padding: 23px 73px;
+      cursor: pointer;
+    }
+  }
+
+  a, a:visited {
+    color: $foreground;
+  }
+  
+  }
+}

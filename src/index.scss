@@ -1,0 +1,15 @@
+
+$backGreen: #A7D7C5;
+$backLight: #F6FBF9;
+$backWhite: #FFF;
+$backBlue: #84C7AE;
+$backBox: #C1E3D6;
+
+$foreground: #32403B;
+$foreHeading: #212B27;
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+@import './style/vars';
+@import './style/global';
+@import './style/SignUpForm';
